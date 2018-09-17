@@ -31,7 +31,8 @@ module.exports = {
 	devServer : {
 		filename : 'main.bundle.js',
 		host : '0.0.0.0',
-		port : 3000
+		port : 3000,
+		disableHostCheck: true
 	},
 	eslint: {
   		configFile: '.eslintrc'
@@ -45,6 +46,6 @@ module.exports = {
     extensions: ['', '.json', '.js', '.jsx']
 	},
 	plugins: [
-    new CaseSensitivePathsPlugin() //检查引用文件名字的大小写
-  ]
+	    new CaseSensitivePathsPlugin() //检查引用文件名字的大小写
+	]
 }
