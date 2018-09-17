@@ -16,7 +16,6 @@
     "renew": "git checkout-index -f -a --prefix=../$name/ && cp ./.gitignore ../$name"
   },
   "keywords": [
-    
     "react-component",
     "es6",
     "karma",
@@ -24,7 +23,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/ms-react-components/module-template.git"
   },
   "author": {
     "name": "",
@@ -38,8 +37,8 @@
   ],
   "license": "ISC",
   "peerDependencies": {
-    "react": "^16.4.2",
-    "react-dom": "^16.4.2"
+    "react": "^15.0.1",
+    "react-dom": "^15.0.1"
   },
   "devDependencies": {
     "babel": "^6.5.2",
@@ -69,14 +68,14 @@
     "karma-jasmine": "^0.3.7",
     "karma-webpack": "^1.7.0",
     "node-sass": "^3.4.2",
-    "react-addons-test-utils": "^15.6.2",
+    "react-addons-test-utils": "^15.0.1",
     "sass-loader": "^3.2.0",
     "style-loader": "^0.13.0",
     "url-loader": "^0.5.7",
     "webpack": "^1.12.10",
     "webpack-dev-server": "^1.14.0",
-    "react": "^16.4.2",
-    "react-dom": "^16.4.2",
+    "react": "^15.0.1",
+    "react-dom": "^15.0.1",
     "eslint-friendly-formatter": "",
     "eslint-loader": "^1.9.0",
     "eslint-plugin-import": "^1.8.1",
