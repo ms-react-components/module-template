@@ -102,7 +102,7 @@ ReactComponent
 #### 4) 项目运行、打包
 
 * `npm install` 
-* `npm run dev` （开发环境打包 port:8080）
+* `npm run dev` （开发环境打包 port:3000）
 * `npm run test` （测试用例）
 * `npm run build` （生产环境打包）
 
