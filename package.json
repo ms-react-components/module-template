@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "",
   "main": "lib/index.js",
-  "_storybook":{
+  "_storybook": {
     "default_example": "man/index.js"
   },
   "scripts": {
@@ -12,7 +12,7 @@
     "build:umd": "webpack src/index.js dist/index.js --config webpack.config.js",
     "build:story": "babel story --out-dir man",
     "test": "karma start",
-    "dev": "webpack-dev-server --progress --colors --config webpack.dev.config.js",
+    "dev": "webpack-dev-server --config webpack.dev.config.js",
     "renew": "git checkout-index -f -a --prefix=../$name/ && cp ./.gitignore ../$name"
   },
   "keywords": [
@@ -21,24 +21,28 @@
     "karma",
     "jasmine"
   ],
+  "files": [
+    "lib",
+    "dist"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/ms-react-components/module-template.git"
   },
   "author": {
-    "name": "",
-    "email": ""
+    "name": "zhuizhums",
+    "email": "zhuizhums@163.com"
   },
   "maintainers": [
     {
-      "name": "",
-      "email": ""
+      "name": "zhuizhums",
+      "email": "zhuizhums@163.com"
     }
   ],
   "license": "ISC",
   "peerDependencies": {
-    "react": "^15.0.1",
-    "react-dom": "^15.0.1"
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1"
   },
   "devDependencies": {
     "babel": "^6.5.2",
@@ -54,6 +58,7 @@
     "css-loader": "^0.23.1",
     "enzyme": "^2.0.0",
     "file-loader": "^0.8.5",
+    "friendly-errors-webpack-plugin": "^1.6.1",
     "gulp": "^3.9.1",
     "gulp-concat": "^2.6.0",
     "gulp-insert": "^0.5.0",
@@ -72,10 +77,11 @@
     "sass-loader": "^3.2.0",
     "style-loader": "^0.13.0",
     "url-loader": "^0.5.7",
-    "webpack": "^1.12.10",
-    "webpack-dev-server": "^1.14.0",
-    "react": "^15.0.1",
-    "react-dom": "^15.0.1",
+    "webpack": "^1.13.1",
+    "webpack-dev-server": "^1.16.5",
+    "webpack-visualizer-plugin": "^0.1.11",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
     "eslint-friendly-formatter": "",
     "eslint-loader": "^1.9.0",
     "eslint-plugin-import": "^1.8.1",
@@ -84,5 +90,11 @@
     "escope": "^3.6.0",
     "eslint": "^4.3.0",
     "estraverse-fb": ""
+  },
+  "engines": {
+    "node": "6.9.0"
+  },
+  "dependencies": {
+    "extract-text-webpack-plugin": "^3.0.2"
   }
 }
